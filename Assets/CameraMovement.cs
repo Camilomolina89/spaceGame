@@ -7,6 +7,8 @@ public class CameraMovement : MonoBehaviour
     public Vector2 moveVector;
     private BuilderCamera cameraActions;
         private InputAction movement;
+        private InputAction upButton;
+        private InputAction downButton;
         private Transform cameraTransform;
 
         
@@ -71,6 +73,9 @@ public class CameraMovement : MonoBehaviour
     {
         lastPosition = this.transform.position;
         movement = cameraActions.Camera.Movement;
+        // buttons = movement = cameraActions.Camera.Up;
+        upButton = cameraActions.Camera.UpButton;
+        downButton = cameraActions.Camera.downButton;
         cameraActions.Camera.Enable();
         cameraActions.Camera.RotateCamera.performed  += RotateCamera;
     }
@@ -80,23 +85,8 @@ public class CameraMovement : MonoBehaviour
         cameraActions.Disable();
     }
     void RotateCamera(InputAction.CallbackContext  inputValue) {
-        // Vector2 rotation = Vector2.zero;
-        /* if (!Mouse.current.middleButton.isPressed) {
-            return;
-        } */
         xAxis += inputValue.ReadValue<Vector2>().x;
         yAxis -= inputValue.ReadValue<Vector2>().y;
-        // float value = inputValue.ReadValue<Vector2>().x;
-        // float valueY = inputValue.ReadValue<Vector2>().y;
-        // float valueY = Mathf.Clamp( inputValue.ReadValue<Vector2>().y, -yRotationLimit, yRotationLimit);
-       /*  Quaternion rotation = Quaternion.Euler(-yAxis * maxRotationSpeed + transform.rotation.eulerAngles.x, xAxis * maxRotationSpeed + transform.rotation.eulerAngles.y, 0f);
-        // rotation.y = Mathf.Clamp(rotation.y, -yRotationLimit, yRotationLimit);
-        // var eulerRot = rotation.eulerAngles;
-        // eulerRot.z = Mathf.Clamp(rotation.z, -yRotationLimit, yRotationLimit);
-        if (rotation.eulerAngles.y > yRotationLimit) {
-            rotation
-        }
-        transform.localRotation = rotation; */
         Quaternion targetRotation;
         
         if (yAxis > yRotationLimit) {
@@ -107,23 +97,14 @@ public class CameraMovement : MonoBehaviour
             yAxis = -yRotationLimit;
         }
         targetRotation = Quaternion.Euler(Vector3.up * xAxis) * Quaternion.Euler(Vector3.right * yAxis);
-        Debug.Log(targetRotation.eulerAngles.y);
         transform.rotation = targetRotation;
-        // rotation.x += xAxis * maxRotationSpeed;
-		// rotation.y += yAxis * maxRotationSpeed;
-		// rotation.y = Mathf.Clamp(rotation.y, -yRotationLimit, yRotationLimit);
-		// var xQuat = Quaternion.AngleAxis(rotation.x, Vector3.up);
-		// var yQuat = Quaternion.AngleAxis(rotation.y, Vector3.left);
-
-		// transform.rotation = transform.rotation * (xQuat * yQuat); //Quaternions seem to rotate more cons
-        //transform.localRotation = Quaternion.Euler(-rotation.x * maxRotationSpeed + transform.rotation.eulerAngles.x, rotation.y * maxRotationSpeed + transform.rotation.eulerAngles.y, 0f);
-
     }
     private void Update() {
         getKeyboardMovement();
         updateVelocity();
         moveVector = movement.ReadValue<Vector2>();
         UpdateBasePosition();
+        
     }
 
     void updateVelocity()
@@ -136,7 +117,12 @@ public class CameraMovement : MonoBehaviour
     {
         Vector3 inputValue = movement.ReadValue<Vector2>().x * GetCameraRight()
                     + movement.ReadValue<Vector2>().y * GetCameraForward();
-
+        if (upButton.IsPressed()) {
+            inputValue.y += speed;
+        }
+        if (downButton.IsPressed()) {
+            inputValue.y -= speed;
+        }
         inputValue = inputValue.normalized;
 
         if (inputValue.sqrMagnitude > 0.1f)

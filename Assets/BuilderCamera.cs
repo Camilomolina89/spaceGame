@@ -53,6 +53,24 @@ public partial class @BuilderCamera : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""UpButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""2a37b2ed-9ff0-4e18-a774-a5dd89c18e53"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""downButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""cda65e54-744a-4a16-b26d-3cee29aa97ec"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -132,6 +150,28 @@ public partial class @BuilderCamera : IInputActionCollection2, IDisposable
                     ""action"": ""ZoomCamera"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8c8d1277-fb9c-4509-a21c-6ae981bab0e6"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UpButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6bac9884-9f7c-47a7-8a1e-dbc51a7520cb"",
+                    ""path"": ""<Keyboard>/leftShift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""downButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -204,6 +244,8 @@ public partial class @BuilderCamera : IInputActionCollection2, IDisposable
         m_Camera_Movement = m_Camera.FindAction("Movement", throwIfNotFound: true);
         m_Camera_RotateCamera = m_Camera.FindAction("RotateCamera", throwIfNotFound: true);
         m_Camera_ZoomCamera = m_Camera.FindAction("ZoomCamera", throwIfNotFound: true);
+        m_Camera_UpButton = m_Camera.FindAction("UpButton", throwIfNotFound: true);
+        m_Camera_downButton = m_Camera.FindAction("downButton", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -266,6 +308,8 @@ public partial class @BuilderCamera : IInputActionCollection2, IDisposable
     private readonly InputAction m_Camera_Movement;
     private readonly InputAction m_Camera_RotateCamera;
     private readonly InputAction m_Camera_ZoomCamera;
+    private readonly InputAction m_Camera_UpButton;
+    private readonly InputAction m_Camera_downButton;
     public struct CameraActions
     {
         private @BuilderCamera m_Wrapper;
@@ -273,6 +317,8 @@ public partial class @BuilderCamera : IInputActionCollection2, IDisposable
         public InputAction @Movement => m_Wrapper.m_Camera_Movement;
         public InputAction @RotateCamera => m_Wrapper.m_Camera_RotateCamera;
         public InputAction @ZoomCamera => m_Wrapper.m_Camera_ZoomCamera;
+        public InputAction @UpButton => m_Wrapper.m_Camera_UpButton;
+        public InputAction @downButton => m_Wrapper.m_Camera_downButton;
         public InputActionMap Get() { return m_Wrapper.m_Camera; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -291,6 +337,12 @@ public partial class @BuilderCamera : IInputActionCollection2, IDisposable
                 @ZoomCamera.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnZoomCamera;
                 @ZoomCamera.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnZoomCamera;
                 @ZoomCamera.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnZoomCamera;
+                @UpButton.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnUpButton;
+                @UpButton.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnUpButton;
+                @UpButton.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnUpButton;
+                @downButton.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnDownButton;
+                @downButton.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnDownButton;
+                @downButton.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnDownButton;
             }
             m_Wrapper.m_CameraActionsCallbackInterface = instance;
             if (instance != null)
@@ -304,6 +356,12 @@ public partial class @BuilderCamera : IInputActionCollection2, IDisposable
                 @ZoomCamera.started += instance.OnZoomCamera;
                 @ZoomCamera.performed += instance.OnZoomCamera;
                 @ZoomCamera.canceled += instance.OnZoomCamera;
+                @UpButton.started += instance.OnUpButton;
+                @UpButton.performed += instance.OnUpButton;
+                @UpButton.canceled += instance.OnUpButton;
+                @downButton.started += instance.OnDownButton;
+                @downButton.performed += instance.OnDownButton;
+                @downButton.canceled += instance.OnDownButton;
             }
         }
     }
@@ -358,5 +416,7 @@ public partial class @BuilderCamera : IInputActionCollection2, IDisposable
         void OnMovement(InputAction.CallbackContext context);
         void OnRotateCamera(InputAction.CallbackContext context);
         void OnZoomCamera(InputAction.CallbackContext context);
+        void OnUpButton(InputAction.CallbackContext context);
+        void OnDownButton(InputAction.CallbackContext context);
     }
 }
