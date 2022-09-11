@@ -4,70 +4,70 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class Builder : MonoBehaviour
 {
-    // private GameObject hitObject;
-    public GameObject boxModule;
+    public GameObject constructablePart;
     private Mouse mouse;
-    Camera camera;
-    [Range(0f, 90f)][SerializeField] float yRotationLimit = 88f;
+
 
     BuilderCamera cameraActions;
     Transform cameraTransform;
-    Vector3 lastPosition;
-    Vector3 targetPosition;
-    Vector3 horizontalVelocity;
-    private void Awake() {
+
+    public LayerMask layer;
+    [SerializeField] GameObject baseBlock;
+    private void Awake()
+    {
         mouse = Mouse.current;
         cameraActions = new BuilderCamera();
         cameraTransform = Camera.main.transform;
     }
- 
 
-    void Update() {
-        RaycastHit hit;
+
+    void Update(){
+        // mover click a evento
         Camera camera = Camera.main;
-        
-        Ray ray = Camera.main.ScreenPointToRay(mouse.position.ReadValue());
-        if(Physics.Raycast(ray, out hit)) {
-            var hitObject = hit.collider.gameObject;
-            BaseModule baseModule;
-            bool hasModule = hitObject.TryGetComponent<BaseModule>(out baseModule);
-            if (hasModule) {
-                baseModule.selected = true;
-                Vector3 spawnPoint = hitObject.transform.position + hit.normal;
-                if (mouse.leftButton.wasPressedThisFrame) {
-                    GameObject box = Instantiate(boxModule, spawnPoint, Quaternion.identity);
-                    connectNewBlock(box);
-                }
-            }
-        }
-    }
-    void connectNewBlock(GameObject box) {
-        // Rigidbody childRigidBody = hitObject.GetComponent<Rigidbody>();
-        
-        // joint.connectedBody = childRigidBody;
-        var directions = new List<Vector3>();
-        directions.Add(Vector3.up);
-        directions.Add(Vector3.right);
-        directions.Add(Vector3.forward);
-        directions.Add(-Vector3.up);
-        directions.Add(-Vector3.right);
-        directions.Add(-Vector3.forward);
-        foreach (var rayDirection in directions) {
-            RaycastHit hit;
-            bool isHit =Physics.Raycast(transform.position, rayDirection, out hit);
-            if (isHit) {
-                BaseModule baseModule;
-                var hitObject = hit.collider.gameObject;
-                bool hasModule = hitObject.TryGetComponent<BaseModule>(out baseModule);
-                if (hasModule) {
+        RaycastHit block = getBlockOnMouse(camera);
+        Vector3 spawnPoint = getSpawnPoint(block);
 
-                    FixedJoint joint = box.AddComponent<FixedJoint>();
-                    var childRigidBody = hitObject.GetComponent<Rigidbody>();
-                    joint.connectedBody = childRigidBody;
-                }
-            }
+
+
+        if (mouse.leftButton.wasPressedThisFrame){
+            GameObject box = Instantiate(constructablePart, spawnPoint, Quaternion.identity);
+            Destroy(box.GetComponent<Rigidbody>());
+            box.transform.SetParent(baseBlock.transform);
         }
     }
+    RaycastHit getBlockOnMouse(Camera camera){
+        
+        RaycastHit hit;
+        Ray ray = camera.ScreenPointToRay(mouse.position.ReadValue());
+        if (!Physics.Raycast(ray, out hit)){
+            return hit;
+        }
+        GameObject hitObject = hit.collider.gameObject;
+        BaseModule baseModule;
+        bool hasModule = hitObject.TryGetComponent<BaseModule>(out baseModule);
+        if (!hasModule){
+            return hit;
+        }
+        return hit;
+        
+    }
+    Vector3 getSpawnPoint(RaycastHit hit) {
+        GameObject hitObject = hit.collider.gameObject;
+        Vector3 spawnPoint = hitObject.transform.position + hit.normal;
+        //RaycastHit hitFromInner;
+        Gizmos.color = Color.red;
+        Debug.DrawRay(hitObject.transform.position, hit.normal);
+        Ray r = new Ray(hitObject.transform.position, hit.normal);
+        RaycastHit hitInfo;
+        if (Physics.Raycast(r, out hitInfo, layer)){
+            GameObject hitRay = hitInfo.collider.gameObject;
+            hitRay.GetComponent<Renderer>().material.color = Color.red;
+        }
+        return spawnPoint;
+    }
+
+
+
 
 
 }

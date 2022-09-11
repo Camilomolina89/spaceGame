@@ -23,43 +23,36 @@ public class CameraMovement : MonoBehaviour
         private float damping = 15f;
 
         
-        [SerializeField]
-        private float stepSize = 2f;
+        //[SerializeField]        private float stepSize = 2f;
         
-        [SerializeField]
-        private float zoomDampening = 7.5f;
+        //[SerializeField]        private float zoomDampening = 7.5f;
         
-        [SerializeField]
-        private float minHeight = 5f;
+        //[SerializeField]        private float minHeight = 5f;
         
-        [SerializeField]
-        private float maxHeight = 50f;
+        //[SerializeField]        private float maxHeight = 50f;
         
-        [SerializeField]
-        private float zoomSpeed = 2f;
+        //[SerializeField]        private float zoomSpeed = 2f;
 
         
-        [SerializeField]
-        private float maxRotationSpeed = 1f;
-        [SerializeField] private float yRotationLimit = 80f;
+        //[SerializeField]        private float maxRotationSpeed = 1f;
+        [SerializeField] private float yMaxRotationLimit = 80f;
+        [SerializeField] private float yMinRotationLimit = 80f;
 
         
-        [SerializeField]
-        [Range(0f,0.1f)]
-        private float edgeTolerance = 0.05f;
+        //[SerializeField]        [Range(0f,0.1f)]        private float edgeTolerance = 0.05f;
 
         //value set in various functions 
         //used to update the position of the camera base object.
         private Vector3 targetPosition;
 
-        private float zoomHeight;
+        //private float zoomHeight;
 
         //used to track and maintain velocity w/o a rigidbody
         private Vector3 horizontalVelocity;
         private Vector3 lastPosition;
 
         //tracks where the dragging action started
-        Vector3 startDrag;
+        //Vector3 startDrag;
 
         float xAxis = 0f;
         float yAxis = 0f; 
@@ -89,12 +82,12 @@ public class CameraMovement : MonoBehaviour
         yAxis -= inputValue.ReadValue<Vector2>().y;
         Quaternion targetRotation;
         
-        if (yAxis > yRotationLimit) {
-            yAxis = yRotationLimit;
+        if (yAxis > yMaxRotationLimit) {
+            yAxis = yMaxRotationLimit;
 
         }
-        if (yAxis< -yRotationLimit) {
-            yAxis = -yRotationLimit;
+        if (yAxis< -yMinRotationLimit) {
+            yAxis = -yMinRotationLimit;
         }
         targetRotation = Quaternion.Euler(Vector3.up * xAxis) * Quaternion.Euler(Vector3.right * yAxis);
         transform.rotation = targetRotation;
