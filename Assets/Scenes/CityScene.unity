@@ -695,6 +695,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   level: 1
+  building: {fileID: 0}
 --- !u!65 &103654596
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -904,6 +905,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   level: 1
+  building: {fileID: 0}
 --- !u!65 &141137216
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1307,6 +1309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   level: 1
+  building: {fileID: 0}
 --- !u!65 &171311341
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1516,6 +1519,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   level: 1
+  building: {fileID: 0}
 --- !u!65 &187568957
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2538,7 +2542,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &298624092
 GameObject:
@@ -2589,6 +2593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 2
   level: -2
+  building: {fileID: 0}
 --- !u!65 &298624095
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3089,6 +3094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   level: 1
+  building: {fileID: 0}
 --- !u!65 &320603940
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3774,6 +3780,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 2
   level: 1
+  building: {fileID: 0}
 --- !u!1 &364500653
 GameObject:
   m_ObjectHideFlags: 0
@@ -3886,6 +3893,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 2
   level: 1
+  building: {fileID: 0}
 --- !u!1 &364817538
 GameObject:
   m_ObjectHideFlags: 0
@@ -3935,6 +3943,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 1
   level: 1
+  building: {fileID: 0}
 --- !u!65 &364817541
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4386,6 +4395,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 397813221}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &398256892
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 8387873e4f19b2f4a9b752761583dc6d, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8387873e4f19b2f4a9b752761583dc6d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.655495
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8387873e4f19b2f4a9b752761583dc6d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8387873e4f19b2f4a9b752761583dc6d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 18.166018
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8387873e4f19b2f4a9b752761583dc6d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8387873e4f19b2f4a9b752761583dc6d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8387873e4f19b2f4a9b752761583dc6d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8387873e4f19b2f4a9b752761583dc6d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8387873e4f19b2f4a9b752761583dc6d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8387873e4f19b2f4a9b752761583dc6d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8387873e4f19b2f4a9b752761583dc6d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8387873e4f19b2f4a9b752761583dc6d, type: 3}
+      propertyPath: m_Name
+      value: Sphere
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8387873e4f19b2f4a9b752761583dc6d, type: 3}
 --- !u!1 &419089778
 GameObject:
   m_ObjectHideFlags: 0
@@ -4472,6 +4538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   level: 1
+  building: {fileID: 0}
 --- !u!65 &425333496
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4930,12 +4997,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 487167970}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 16.94}
   m_LocalScale: {x: 12, y: 12, z: 12}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &494885399
 GameObject:
@@ -5374,6 +5441,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   level: 1
+  building: {fileID: 0}
 --- !u!65 &539296572
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5840,6 +5908,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 2
   level: 1
+  building: {fileID: 0}
 --- !u!1 &592454628
 GameObject:
   m_ObjectHideFlags: 0
@@ -5986,6 +6055,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   level: 1
+  building: {fileID: 0}
 --- !u!65 &607630568
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7034,6 +7104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 2
   level: 1
+  building: {fileID: 0}
 --- !u!1 &720158728
 GameObject:
   m_ObjectHideFlags: 0
@@ -7787,6 +7858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   level: 1
+  building: {fileID: 0}
 --- !u!65 &775298811
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8187,7 +8259,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &810862221
 MonoBehaviour:
@@ -8201,6 +8273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
   m_XRTrackingOrigin: {fileID: 0}
@@ -8217,6 +8290,7 @@ MonoBehaviour:
   m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
 --- !u!1 &812535753
 GameObject:
   m_ObjectHideFlags: 0
@@ -8776,6 +8850,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 1
   level: 1
+  building: {fileID: 0}
 --- !u!65 &877524706
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9373,6 +9448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 2
   level: 1
+  building: {fileID: 0}
 --- !u!65 &926898013
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9679,6 +9755,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   level: 1
+  building: {fileID: 0}
 --- !u!65 &959187048
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9937,7 +10014,7 @@ RectTransform:
   - {fileID: 1658760752}
   - {fileID: 812535754}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -9993,6 +10070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 1
   level: 1
+  building: {fileID: 0}
 --- !u!65 &1007381841
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10105,6 +10183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   level: 1
+  building: {fileID: 0}
 --- !u!65 &1009178049
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10740,6 +10819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   level: 1
+  building: {fileID: 0}
 --- !u!65 &1056573470
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11403,7 +11483,7 @@ Transform:
   m_Children:
   - {fileID: 347934908}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1157782693
 GameObject:
@@ -11711,6 +11791,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 2
   level: 1
+  building: {fileID: 0}
 --- !u!1 &1199218581
 GameObject:
   m_ObjectHideFlags: 0
@@ -12536,6 +12617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   level: 1
+  building: {fileID: 0}
 --- !u!65 &1295736917
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12631,9 +12713,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35b80c2e4c7a0dd419241671b9e43088, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildingCost: 0
-  upkeepCost: 0
-  income: 0
+  buildingEnergyCost: 1
+  energyIncome: 2
+  energyCost: 1
 --- !u!136 &1305289336
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -12711,7 +12793,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1305903762
 GameObject:
@@ -12859,6 +12941,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 2
   level: 2
+  building: {fileID: 0}
 --- !u!65 &1314439877
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13165,6 +13248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   level: 1
+  building: {fileID: 0}
 --- !u!65 &1323245401
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13277,6 +13361,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 2
   level: -2
+  building: {fileID: 0}
 --- !u!65 &1338240779
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13389,6 +13474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   level: 1
+  building: {fileID: 0}
 --- !u!65 &1339492981
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13501,6 +13587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   level: 1
+  building: {fileID: 0}
 --- !u!65 &1365236600
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13613,6 +13700,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   level: 1
+  building: {fileID: 0}
 --- !u!65 &1379085291
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13919,6 +14007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   level: 1
+  building: {fileID: 0}
 --- !u!65 &1383925344
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14225,6 +14314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 2
   level: -2
+  building: {fileID: 0}
 --- !u!65 &1407868431
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14569,6 +14659,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 2
   level: -2
+  building: {fileID: 0}
 --- !u!65 &1470114460
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14681,6 +14772,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   level: 1
+  building: {fileID: 0}
 --- !u!65 &1489509447
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14793,6 +14885,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   level: 1
+  building: {fileID: 0}
 --- !u!65 &1505574572
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15148,6 +15241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 1
   level: 1
+  building: {fileID: 0}
 --- !u!65 &1552946575
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16262,6 +16356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   level: 1
+  building: {fileID: 0}
 --- !u!65 &1641960488
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16471,6 +16566,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   level: -3
+  building: {fileID: 0}
 --- !u!65 &1648056295
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16899,6 +16995,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   level: 3
+  building: {fileID: 0}
 --- !u!65 &1674371147
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17108,6 +17205,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   level: 1
+  building: {fileID: 0}
 --- !u!65 &1747986821
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17646,6 +17744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   level: 1
+  building: {fileID: 0}
 --- !u!65 &1780991090
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17758,6 +17857,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 2
   level: -2
+  building: {fileID: 0}
 --- !u!65 &1809228008
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18079,7 +18179,7 @@ Transform:
   - {fileID: 551098340}
   - {fileID: 2123406920}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1817400765
 GameObject:
@@ -18224,6 +18324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 1
   level: 1
+  building: {fileID: 0}
 --- !u!65 &1826649208
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18433,6 +18534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   level: 1
+  building: {fileID: 0}
 --- !u!65 &1861247954
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19200,6 +19302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   level: 1
+  building: {fileID: 0}
 --- !u!65 &1973597560
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19533,7 +19636,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2025637204}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 6, z: 0}
+  m_LocalPosition: {x: 0, y: 6, z: -17.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19547,7 +19650,7 @@ Transform:
   - {fileID: 419089779}
   - {fileID: 270194208}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2033510026
 GameObject:
@@ -19792,6 +19895,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 1
   level: 1
+  building: {fileID: 0}
 --- !u!65 &2056404092
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20583,6 +20687,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   level: 1
+  building: {fileID: 0}
 --- !u!65 &2124414249
 BoxCollider:
   m_ObjectHideFlags: 0

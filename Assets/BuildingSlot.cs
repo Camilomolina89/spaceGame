@@ -6,6 +6,7 @@ public class BuildingSlot : MonoBehaviour
 {
     public int layer = 1;
     public int level = 1;
+    public Building building;
     void Start()
     {
         

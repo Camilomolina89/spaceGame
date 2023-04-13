@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65c38007e750467438f522950b16eefb, type: 3}
+  m_Name: ColonyShipBuild
+  m_EditorClassIdentifier: 
+  templateName: ColonyShipBuild
+  buildingEnergyCost: 1
+  energyIncome: 2
+  energyCost: 1
+  slots: 1
+  prefab: {fileID: 3654970662320681682, guid: cef8a83124629204d8f9ee1b3991b8ac, type: 3}
+  temporalPrefab: {fileID: 3654970662320681682, guid: cef8a83124629204d8f9ee1b3991b8ac, type: 3}
+  planetPanel: {fileID: 0}

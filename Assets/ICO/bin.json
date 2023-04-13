@@ -1,0 +1,1100 @@
+{
+    "panels": [
+        {
+            "name": "panel.001",
+            "building": {
+                "modelName": "barrels",
+                "buildingEnergyCost": 1,
+                "energyIncome": 2.0,
+                "energyMaintenance": 1.0
+            },
+            "normal": {
+                "x": -7.777093742333818e-7,
+                "y": 1.0,
+                "z": -1.1920931797249069e-7
+            },
+            "position": {
+                "x": -0.00002379204670432955,
+                "y": 9.0,
+                "z": -0.000001072884515451733
+            },
+            "rotation": {
+                "x": -8.429369557916289e-8,
+                "y": -0.000001321780359830882,
+                "z": 0.000001321780359830882,
+                "w": 0.9999999403953552
+            },
+            "pop": [
+                {
+                    "level": 1
+                }
+            ]
+        },
+        {
+            "name": "panel.002",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.38973212242126467,
+                "y": 0.8609291911125183,
+                "z": 0.32697048783302309
+            },
+            "position": {
+                "x": 3.507589101791382,
+                "y": 7.7483625411987309,
+                "z": 2.942734479904175
+            },
+            "rotation": {
+                "x": 0.23898489773273469,
+                "y": 0.40769535303115847,
+                "z": -0.11145222932100296,
+                "w": 0.8742133975028992
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.003",
+            "building": {
+                "modelName": "barrels",
+                "buildingEnergyCost": 1,
+                "energyIncome": 2.0,
+                "energyMaintenance": 1.0
+            },
+            "normal": {
+                "x": -0.1624590903520584,
+                "y": 0.8506524562835693,
+                "z": 0.4999975264072418
+            },
+            "position": {
+                "x": -1.4621318578720093,
+                "y": 7.655872344970703,
+                "z": 4.4999775886535648
+            },
+            "rotation": {
+                "x": 0.26990067958831789,
+                "y": -0.15048041939735413,
+                "z": 0.04274807870388031,
+                "w": 0.9500957131385803
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.004",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.005",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": -0.16245891153812409,
+                "y": 0.8506524562835693,
+                "z": -0.499997615814209
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.006",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.3958684206008911,
+                "y": 0.8721049427986145,
+                "z": -0.28761279582977297
+            },
+            "position": {
+                "x": 4.086177825927734,
+                "y": 7.449122428894043,
+                "z": -2.9687905311584474
+            },
+            "rotation": {
+                "x": 0.1332596242427826,
+                "y": 0.8517578840255737,
+                "z": -0.26153719425201418,
+                "w": 0.43399158120155337
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.007",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.7236095070838928,
+                "y": 0.4472149610519409,
+                "z": 0.5257261991500855
+            },
+            "position": {
+                "x": 6.512485504150391,
+                "y": 4.024934768676758,
+                "z": 4.731535911560059
+            },
+            "rotation": {
+                "x": 0.46842852234840395,
+                "y": 0.3861899673938751,
+                "z": -0.23867811262607575,
+                "w": 0.7579345703125
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.008",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.25083431601524355,
+                "y": 0.5840679407119751,
+                "z": 0.7719759345054627
+            },
+            "position": {
+                "x": 2.2575087547302248,
+                "y": 5.256611347198486,
+                "z": 6.947783470153809
+            },
+            "rotation": {
+                "x": 0.47012487053871157,
+                "y": 0.13757845759391786,
+                "z": -0.07446137815713883,
+                "w": 0.8686255216598511
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.009",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.010",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.011",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.012",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.013",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.014",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.2628677487373352,
+                "y": 0.5257333517074585,
+                "z": -0.8090148568153381
+            },
+            "position": {
+                "x": 2.2575085163116457,
+                "y": 5.256611347198486,
+                "z": -6.94778299331665
+            },
+            "rotation": {
+                "x": 0.07134035229682923,
+                "y": 0.8790056705474854,
+                "z": -0.45041829347610476,
+                "w": 0.13922297954559327
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.015",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.7236068844795227,
+                "y": 0.4472130835056305,
+                "z": -0.5257313847541809
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.016",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.8498900532722473,
+                "y": 0.5252627730369568,
+                "z": 0.0422588549554348
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.017",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.018",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.019",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.020",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.021",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.022",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.023",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.024",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.019156984984874727,
+                "y": 0.036435242742300037,
+                "z": -0.999152421951294
+            },
+            "position": {
+                "x": 0.17241287231445313,
+                "y": 0.3279171884059906,
+                "z": -8.992371559143067
+            },
+            "rotation": {
+                "x": 0.006653207819908857,
+                "y": 0.7198402285575867,
+                "z": -0.6940735578536987,
+                "w": 0.006900200620293617
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.025",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.6027846336364746,
+                "y": -0.036431439220905307,
+                "z": -0.7970717549324036
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.026",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.027",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.028",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.029",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.030",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.031",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.032",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.033",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": -0.7236096262931824,
+                "y": -0.44721490144729617,
+                "z": -0.5257261991500855
+            },
+            "position": {
+                "x": -6.512486457824707,
+                "y": -4.0249342918396,
+                "z": -4.731535911560059
+            },
+            "rotation": {
+                "x": -0.3861899673938751,
+                "y": 0.4684285521507263,
+                "z": -0.7579345107078552,
+                "w": -0.23867814242839814
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.034",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": -0.2736095190048218,
+                "y": -0.4648113250732422,
+                "z": -0.8420738577842712
+            },
+            "position": {
+                "x": -2.4624857902526857,
+                "y": -4.18330192565918,
+                "z": -7.578664779663086
+            },
+            "rotation": {
+                "x": -0.133879154920578,
+                "y": 0.5109263062477112,
+                "z": -0.8452703952789307,
+                "w": -0.0809236690402031
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.035",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.036",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.037",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.038",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.039",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.040",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.041",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        },
+        {
+            "name": "panel.042",
+            "building": {
+                "modelName": "",
+                "buildingEnergyCost": 0,
+                "energyIncome": 0.0,
+                "energyMaintenance": 0.0
+            },
+            "normal": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "pop": []
+        }
+    ]
+}

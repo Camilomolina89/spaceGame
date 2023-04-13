@@ -28,7 +28,6 @@ public class Builder : MonoBehaviour
         Vector3 spawnPoint = getSpawnPoint(block);
 
 
-
         if (mouse.leftButton.wasPressedThisFrame){
             GameObject box = Instantiate(constructablePart, spawnPoint, Quaternion.identity);
             Destroy(box.GetComponent<Rigidbody>());
